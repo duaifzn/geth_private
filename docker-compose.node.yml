@@ -9,6 +9,7 @@ services:
       dockerfile: docker/Dockerfile
       args:
         - ACCOUNT_PASSWORD=${ACCOUNT_PASSWORD}
+        - PRIVATECHAIN_PATH=${PRIVATECHAIN_PATH}
     ports:
       - '30304:30303'
       - '8547:8545'
